@@ -1,6 +1,7 @@
 def getBuildProperties() {
        def buildParameter
-       buildParameter= [choice(choices:['Build Only','Dev','Test'], description: 'Select Correct UCD environment', name: 'Environment')]
+       buildParameter= [input message: 'Select Env for deploy', parameters: [choice(choices: ['UAT', 'STAGE'], description: 'Select correct env for deploy', name: 'Environment')]]
+                
        
        return buildParameter
 }
