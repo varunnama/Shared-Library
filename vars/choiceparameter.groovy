@@ -1,8 +1,8 @@
 def getBuildProperties() {
        def buildParameter
-      [parameters{choice(name:'Environment', choices:['UAT','STAGE'], description: 'Select Correct Environment for deployment')}]
+      buildParameter = [choice(choices:['UAT','STAGE'], description: 'Select Correct Environment for deployment',name:'Environment')]
                 
-      buildParameter = params.Environment
+     // buildParameter = params.Environment
        return buildParameter
 }
 
