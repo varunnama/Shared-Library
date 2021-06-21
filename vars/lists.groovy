@@ -1,4 +1,4 @@
-def listvalue(string applicationname) {
+def listvalue(String applicationname) {
 
     echo "Function Input: ${applicationname}"
       
