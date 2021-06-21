@@ -7,8 +7,6 @@ def listvalue(String applicationname) {
       CHOICES.add('A')
       CHOICES.add('B')
       CHOICES.add('C') 
-
-     println CHOICES
-
+     
  return CHOICES
 }
