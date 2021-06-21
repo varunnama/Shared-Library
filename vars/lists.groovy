@@ -1,4 +1,6 @@
-def listvalue() {
+def listvalue(string applicationname) {
+
+    echo "Function Input: ${applicationname}"
       
      def CHOICES = []
      
